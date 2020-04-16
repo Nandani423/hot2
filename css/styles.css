@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
+}
+a {
+  text-decoration: none !important;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bitter", serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.grid-container {
+  display: block;
+  grid-template-columns: 1;
+  padding: 10px;
+}
+.nav {
+  color: grey;
+  font-weight: bold;
+}
+.grid-item {
+  padding: 5px 100px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  font-size: 20px;
+}
+.logo,
+.logo img {
+  width: 100%;
+  height: 200px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.grid-container .grid-item.border {
+  margin: 2.5% auto;
+}
+.border {
+  border: 2px solid grey;
+}
+
+hr {
+  border-top: 4px solid grey !important;
+}
+.main-heading {
+  padding: 15px 0px;
+  background-color: pink;
+  margin: 20px auto;
+  text-align: center;
+}
+.main-heading h1 {
+  font-size: 40px;
+  color: grey;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+  margin: 5px auto;
+  color: grey;
+}
+
+.center ul,
+.center ul li {
+  display: inline;
+  line-height: 1.5;
+  margin: 0 2.5%;
+}
+
+.center ul li {
+  font-size: 30px;
+}
+
+.center h1 {
+  font-size: 25px;
+}
+.center h2 {
+  font-size: 20px;
+}
+.main-head {
+  font-size: 20px;
+  text-align: center;
+  margin: 12px;
+}
+
+.container {
+  margin: 10px auto;
+}
+
+.container .container-item {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.img-left,
+.img-right {
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+
+.img-left img,
+.img-right img {
+  width: 100%;
+  border: 3px solid gray !important;
+}
+
+.para {
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: block;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.portfolio-grid-item {
+  margin: 2.5% auto;
+  text-align: center;
+  width: 100%;
+  float: none;
+  max-width: 300px;
+}
+
+.portfolio-grid-item img {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio-grid-item figcaption {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+@media (max-width: 80rem) and (min-width: 35rem) {
+  p {
+    font-size: 1rem;
+  }
+  .logo,
+  .logo img {
+    width: 100%;
+    height: 300px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .grid-container {
+    display: block;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-container .grid-item.border {
+    width: 45%;
+    float: left;
+    margin: 2.5% 2.5%;
+  }
+  .grid-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px auto;
+  }
+  .main-head {
+    font-size: 28px;
+  }
+
+  .center {
+    margin: 10px auto;
+  }
+
+  .center ul li {
+    font-size: 40px;
+  }
+  .center h1 {
+    font-size: 30px;
+  }
+  .center h2 {
+    font-size: 25px;
+  }
+
+  .container .container-item {
+    width: 90%;
+  }
+
+  .img-left {
+    width: 40%;
+    float: left;
+    text-align: left;
+  }
+
+  .img-left img {
+    width: 95%;
+  }
+
+  .img-right {
+    width: 40%;
+    float: right;
+    text-align: left;
+  }
+
+  .img-right img {
+    width: 95%;
+  }
+
+  .portfolio-grid {
+    display: block;
+    grid-template-columns: 2 auto;
+    padding: 10px;
+  }
+
+  .portfolio-grid-item {
+    width: 50%;
+    float: left;
+    margin: 2.5% auto;
+    max-width: 350px;
+  }
+
+  .portfolio-grid-item img {
+    width: 90%;
+    height: 350px;
+  }
+
+  .portfolio-grid-item figcaption {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 80rem) {
+  p {
+    font-size: 1.25rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .grid-container .grid-item.border {
+    margin: auto;
+  }
+
+  .grid-item {
+    padding: 10px 120px;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+  }
+  .logo img {
+    width: 250px;
+  }
+  hr {
+    border-top: 5px solid grey !important;
+  }
+  .main-heading {
+    padding: 25px 0px;
+    margin: 30px auto;
+  }
+  .main-heading h1 {
+    font-size: 70px;
+  }
+
+  .main-head {
+    font-size: 35px;
+  }
+
+  .center {
+    margin: 15px auto;
+  }
+
+  .center ul li {
+    font-size: 50px;
+  }
+  .center h1 {
+    font-size: 35px;
+  }
+  .center h2 {
+    font-size: 30px;
+  }
+
+  .container .container-item {
+    width: 85%;
+  }
+
+  .img-left {
+    width: 40%;
+    float: left;
+    text-align: left;
+  }
+
+  .img-left img {
+    width: 90%;
+  }
+
+  .img-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+  }
+
+  .img-right img {
+    width: 90%;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .portfolio-grid-item {
+    margin: 2.5% auto;
+    width: 100%;
+    float: none;
+    max-width: 400px;
+  }
+
+  .portfolio-grid-item img {
+    width: 85%;
+    height: 350px;
+  }
+
+  .portfolio-grid-item figcaption {
+    font-size: 30px;
+  }
+}
